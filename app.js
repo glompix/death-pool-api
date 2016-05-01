@@ -30,7 +30,7 @@ app.set('view engine', 'jade');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(cors({
-  origin: 'http://localhost:8000',
+  origin: process.env.CORS_ORIGIN || 'http://localhost:8000',
   credentials: true
 }));
 app.use(bodyParser.json());
