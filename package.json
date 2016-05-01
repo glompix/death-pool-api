@@ -1,9 +1,9 @@
 {
   "name": "death-pool-api",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www --harmony"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -11,7 +11,11 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "jade": "~1.11.0",
+    "lodash": "^4.11.1",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "mysql": "^2.10.2",
+    "request": "^2.72.0",
+    "serve-favicon": "~2.3.0",
+    "string-replace-webpack-plugin": "0.0.3"
   }
 }
